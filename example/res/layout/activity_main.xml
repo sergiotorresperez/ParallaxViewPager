@@ -5,6 +5,11 @@
     tools:context=".MainActivity" >
 
     <!-- First layer -->
+    <!--
+    This NEED to be a horizontal scroll view.
+    In this example, the content of the view in only a TextView, but you may want to place an image here 
+    For the example, I've set such a text and a text size that will make the content view be wider that the screen.
+    -->
 
     <HorizontalScrollView
         android:id="@+id/layer0"
@@ -12,14 +17,14 @@
         android:layout_height="match_parent" >
 
         <TextView
-            android:layout_marginBottom="100dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingBottom="200dp"
+            android:layout_marginBottom="100dp"
             android:ellipsize="none"
             android:gravity="center_vertical"
+            android:paddingBottom="200dp"
             android:singleLine="true"
-            android:text="very far"
+            android:text="this layer is wide and deep"
             android:textColor="#11000000"
             android:textSize="200sp" />
     </HorizontalScrollView>
@@ -32,14 +37,14 @@
         android:layout_height="match_parent" >
 
         <TextView
-            android:layout_marginBottom="50dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingBottom="75dp"
+            android:layout_marginBottom="50dp"
             android:ellipsize="none"
             android:gravity="center_vertical"
+            android:paddingBottom="75dp"
             android:singleLine="true"
-            android:text="in the middle"
+            android:text="this text is below the pager"
             android:textColor="#55000000"
             android:textSize="150sp"
             android:visibility="visible" />

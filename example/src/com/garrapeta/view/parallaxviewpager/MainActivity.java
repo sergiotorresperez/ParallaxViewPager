@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
      */
     private class CustomAdapter extends PagerAdapter {
 
-        private static final int PAGES_COUNT = 5;
+        private static final int PAGES_COUNT = 3;
 
         @Override
         public int getCount() {

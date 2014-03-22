@@ -8,6 +8,10 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.widget.HorizontalScrollView;
 
+/**
+ * Subclass of {@link ViewPager} to create a parallax effect between this View
+ * and some Views below it.
+ */
 public class ParallaxViewPager extends ViewPager {
 
     private List<HorizontalScrollView> mLayers;
