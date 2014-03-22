@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <!-- First layer -->
+
+    <HorizontalScrollView
+        android:id="@+id/layer0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_marginBottom="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="200dp"
+            android:ellipsize="none"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="very far"
+            android:textColor="#11000000"
+            android:textSize="200sp" />
+    </HorizontalScrollView>
+
+    <!-- Second layer -->
+
+    <HorizontalScrollView
+        android:id="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="75dp"
+            android:ellipsize="none"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="in the middle"
+            android:textColor="#55000000"
+            android:textSize="150sp"
+            android:visibility="visible" />
+    </HorizontalScrollView>
+
+    <!-- Viewpager -->
+
+    <com.garrapeta.view.parallaxviewpager.ParallaxViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
