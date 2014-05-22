@@ -1,4 +1,4 @@
-package com.garrapeta.view.parallaxviewpager;
+package com.garrapeta.view.parallaxviewpager.example;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
 import android.widget.TextView;
+
+import com.garrapeta.view.parallaxviewpager.ParallaxViewPager;
 
 public class MainActivity extends Activity {
 
